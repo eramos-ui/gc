@@ -1,0 +1,9 @@
+version: '3.5'
+services:
+  gcdb:
+    image: mongo:5.0.0
+    container_name: gastos-com
+    ports:
+      - 27017:27017
+    volumes:
+      - ./mongo:/data/db
